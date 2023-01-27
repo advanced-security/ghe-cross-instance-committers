@@ -1,13 +1,8 @@
-export default {
+module.exports = {
   testEnvironment: 'node',
-  preset: 'ts-jest/presets/default-esm',
-  transform: {
-    '^.+\\.m?[tj]s?$': ['ts-jest', { useESM: true }],
-  },
-  moduleNameMapper: {
-    '^(\\.{1,2}/.*)\\.(m)?js$': '$1',
-  },
-  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(m)?ts$',
+  preset: 'ts-jest',
+  modulePathIgnorePatterns: ['lib/*', "./__tests__/setup/"],
+  setupFiles: ["./__tests__/setup/setEnvVars.ts"],
   coverageDirectory: 'coverage',
   collectCoverageFrom: [
     'src/**/*.ts',
