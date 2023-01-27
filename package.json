@@ -35,8 +35,8 @@
     "prettier": "prettier --config .prettierrc --write .",
     "test:watch": "jest --watch"
   },
-  "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
-  "license": "Apache-2.0",
+  "author": "Nick Liffen <nickliffen@users.noreply.github.com>",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.3",
     "fast-csv": "^4.3.6",
