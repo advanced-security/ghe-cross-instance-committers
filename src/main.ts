@@ -33,7 +33,7 @@ export const mergeFileContent = async (data: ParseResult<CSVDataAsJson>[]) => {
 export const uniqueUsers = async (data: CSVDataAsJson[]) =>
   <string[]>(
     data
-      .map((user) => user['User login'])
+      .map((user) => user['User login'].toLowerCase())
       .filter((user, index, arr) => arr.indexOf(user) === index)
   );
 
