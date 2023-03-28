@@ -29,7 +29,7 @@ describe('getFilesInDirectory', () => {
     `${directory}ghas_active_committers_github_2023-01-27T0917.csv`,
     { encoding: 'utf8' },
   );
-  const file2Conent = readFileSync(
+  const file2Content = readFileSync(
     `${directory}ghas_active_committers_github_2023-01-27T0918.csv`,
     { encoding: 'utf8' },
   );
@@ -42,7 +42,7 @@ describe('getFilesInDirectory', () => {
       '__tests__/data/': {
         'some-file.txt': 'file content here',
         'ghas_active_committers_github_2023-01-27T0917.csv': file1Content,
-        'ghas_active_committers_github_2023-01-27T0918.csv': file2Conent,
+        'ghas_active_committers_github_2023-01-27T0918.csv': file2Content,
         'empty-dir': {
           'some-file.txt': '{ "some": "json" }',
           'some-file-1.txt': '{ "new": "json" }',
@@ -61,8 +61,8 @@ describe('getFilesInDirectory', () => {
   });
 
   it('Read file within top level directory', async () => {
-    const filesFoundInDirecotry = await getFilesInDirectory(directory);
-    expect(filesFoundInDirecotry).toEqual(allFileNames);
+    const filesFoundInDirectory = await getFilesInDirectory(directory);
+    expect(filesFoundInDirectory).toEqual(allFileNames);
   });
 
   it('Successfully filters out files that are not csv', async () => {
@@ -75,10 +75,10 @@ describe('getFilesInDirectory', () => {
     const files = await getFilesInDirectory(directory);
     const csvFilesFound = await filerByFileExtention(files, '.csv');
     const csvFiles = await readMultipleFiles(csvFilesFound);
-    expect(csvFiles).toEqual([file1Content, file2Conent]);
+    expect(csvFiles).toEqual([file1Content, file2Content]);
   });
 
-  it('Successfully converts al CSVs to JSON', async () => {
+  it('Successfully converts all CSVs to JSON', async () => {
     const files = await getFilesInDirectory(directory);
     const csvFilesFound = await filerByFileExtention(files, '.csv');
     const csvFiles = await readMultipleFiles(csvFilesFound);
@@ -116,5 +116,8 @@ describe('getFilesInDirectory', () => {
     const content = await mergeFileContent(jsonFiles);
     const unique = await uniqueUsers(content);
     expect(isArrayUnique(unique)).toBeTruthy();
+    const expectedUsers = Array.from({ length: 10 }, (_,i) => `user${i + 1}`);
+    expect(unique.length).toBe(expectedUsers.length);
+    expect(unique).toEqual(expect.arrayContaining(expectedUsers));
   });
 });

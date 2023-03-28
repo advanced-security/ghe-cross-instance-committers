@@ -1,7 +1,7 @@
 User login,Organization / repository,Last pushed date
 user1,org/repo,2023-01-27
 user1,org1/repo2,2022-11-28
-user1,org1/repo2,2022-11-28
+uSer1,org1/repo2,2022-11-28
 user2,org1/repo2,2022-11-28
 user2,org1/repo2,2022-11-28
 user2,org1/repo2,2022-11-28
@@ -15,7 +15,7 @@ user4,org5/repo8,2023-01-25
 user4,org1/repo2,2022-11-28
 user4,org4/repo6,2022-12-02
 user4,org8/repo1,2022-12-02
-user5,org6/repo2,2023-01-04
+usEr5,org6/repo2,2023-01-04
 user5,org1/repo2,2022-12-01
 user5,org2/repo3,2023-01-06
 user5,org4/repo9,2023-01-06
@@ -23,6 +23,6 @@ user5,org10/repo4,2023-01-06
 user6,org1/repo2,2022-11-28
 user6,org1/repo2,2022-11-28
 user6,org1/repo2,2022-11-28
-user6,org9/repo3,2023-01-18
+usEr6,org9/repo3,2023-01-18
 user7,org9/repo3,2023-01-08
 user7,org10/repo1,2023-01-10
