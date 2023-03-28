@@ -116,5 +116,8 @@ describe('getFilesInDirectory', () => {
     const content = await mergeFileContent(jsonFiles);
     const unique = await uniqueUsers(content);
     expect(isArrayUnique(unique)).toBeTruthy();
+    const expectedUsers = Array.from({ length: 10 }, (_,i) => `user${i + 1}`);
+    expect(unique.length).toBe(expectedUsers.length);
+    expect(unique).toEqual(expect.arrayContaining(expectedUsers));
   });
 });
