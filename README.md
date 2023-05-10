@@ -37,6 +37,9 @@ Head to the following URL in each of your GHES instances:
 https://${ghes-url}.com/stafftools/ghas_committers
 ```
 
+> **Note**
+> If you are struggling to get the file to download because your instance is extremely large, please contact your account team for assistance.
+
 If you are interested in knowing your maximum committer number (e.g. the total number of unique developers across your whole GHE instance), click the download button next to the `Total billable committers if GHAS is enabled for all repositories` option. 
 
 If you are interested in knowing your current committer number (e.g. the total number of unique developers across your whole GHE instance who are curently consuming a GHAS licence), click the download button next to the `Current active committer count` option.
