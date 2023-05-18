@@ -48,6 +48,8 @@ Once that's downloaded, create a new folder and drop the CSV into that folder.
 
 Repeat the steps above across all your GHES instances. Make sure you drop the content **into the same folder**, you do not need to create a new folder every time. 
 
+If you are on a GHEC instance (including EMU), please head to `https://github.com/enterprises/${enterprise-slug}/enterprise_licensing` and click "Download CSV" under the Advanced Security section. This will download a CSV, please place that in the same folder as above.
+
 ## Running the script
 
 1.  Install dependencies
