@@ -14,13 +14,13 @@ The purpose of this repository is to help enterprise administrators who maintain
 1.  Clone this repository onto your local machine.
 
     ```bash
-    git clone https://github.com/advanced-security/ghes-cross-instance-committers.git
+    git clone https://github.com/advanced-security/ghe-cross-instance-committers.git
     ```
 
 2.  Change the directory to the repository you have just installed.
 
     ```bash
-    cd ghes-cross-instance-committers
+    cd ghe-cross-instance-committers
     ```
 
 4.  Copy the `.env.sample` to `.env`. On a Mac, this can be done via the following terminal command:
