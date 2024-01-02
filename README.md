@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The purpose of this repository is to help enterprise administrators who maintain multiple GHE instances work out unique developers across multiple GHE instances. This script works for both maximum committers and currently consumed GHAS committers. 
+The purpose of this repository is to help enterprise administrators who maintain multiple GHE instances work out unique developers across multiple GHE instances. This script works for both maximum committers and currently consumed GHAS committers.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ The purpose of this repository is to help enterprise administrators who maintain
     cd ghe-cross-instance-committers
     ```
 
-4.  Copy the `.env.sample` to `.env`. On a Mac, this can be done via the following terminal command:
+3.  Copy the `.env.sample` to `.env`. On a Mac, this can be done via the following terminal command:
 
     ```bash
     cp .env.sample .env
@@ -40,13 +40,13 @@ https://${ghes-url}.com/stafftools/ghas_committers
 > **Note**
 > If you are struggling to get the file to download because your instance is extremely large, please contact your account team for assistance.
 
-If you are interested in knowing your maximum committer number (e.g. the total number of unique developers across your whole GHE instance), click the download button next to the `Total billable committers if GHAS is enabled for all repositories` option. 
+If you are interested in knowing your maximum committer number (e.g. the total number of unique developers across your whole GHE instance), click the download button next to the `Total billable committers if GHAS is enabled for all repositories` option.
 
 If you are interested in knowing your current committer number (e.g. the total number of unique developers across your whole GHE instance who are curently consuming a GHAS licence), click the download button next to the `Current active committer count` option.
 
-Once that's downloaded, create a new folder and drop the CSV into that folder. 
+Once that's downloaded, create a new folder and drop the CSV into that folder.
 
-Repeat the steps above across all your GHES instances. Make sure you drop the content **into the same folder**, you do not need to create a new folder every time. 
+Repeat the steps above across all your GHES instances. Make sure you drop the content **into the same folder**, you do not need to create a new folder every time.
 
 If you are on a GHEC instance (including EMU), please head to `https://github.com/enterprises/${enterprise-slug}/enterprise_licensing` and click "Download CSV" under the Advanced Security section. This will download a CSV, please place that in the same folder as above.
 
@@ -58,13 +58,13 @@ If you are on a GHEC instance (including EMU), please head to `https://github.co
     npm install
     ```
 
-3.  Update the `.env. (Replace the XXX with the relative directory of the csv content you created above)
+2.  Update the `.env. (Replace the XXX with the relative directory of the csv content you created above)
 
     ```bash
     DIRECTORY_OF_CSV_CONTENT=XXX
     ```
 
-2.  Run the script
+3.  Run the script
 
     ```bash
     npm run start

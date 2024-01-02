@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync } from 'fs';
 import { extname } from 'path';
 import { parse, ParseResult } from 'papaparse';
-import * as dotenv from "dotenv";
+import * as dotenv from 'dotenv';
 dotenv.config({ path: '.env' });
 
 const GLOBAL_DIRECTORY = process.env.DIRECTORY_OF_CSV_CONTENT || '';

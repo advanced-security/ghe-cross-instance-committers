@@ -1,10 +1,9 @@
 {
-  "extends": "@tsconfig/node18/tsconfig.json",
+  "extends": "@tsconfig/node20/tsconfig.json",
   "include": ["src/**/*", "__tests__/**/*"],
   "exclude": ["dist", "node_modules"],
   "compilerOptions": {
     "typeRoots": ["./types", "node_modules/@types"],
-    "moduleResolution": "node",
     "outDir": "./lib"
   }
 }
