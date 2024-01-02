@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "A script which will return the total number of unique de-deuped active committers across multiple GHES instances",
   "engines": {
-    "node": ">= 18.12 <19"
+    "node": "20"
   },
   "devDependencies": {
-    "@tsconfig/node18": "^18.2.2",
+    "@tsconfig/node20": "^20.1.2",
     "@types/jest": "~29.5",
     "@types/mock-fs": "^4.13.4",
     "@types/node": "~20",
