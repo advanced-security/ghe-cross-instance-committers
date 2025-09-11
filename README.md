@@ -64,7 +64,7 @@ If you are on a GHEC instance (including EMU), please head to `https://github.co
     DIRECTORY_OF_CSV_CONTENT=XXX
     ```
 
-3.  Run the script
+3.  Run the script to deduplicate by username
 
     ```bash
     npm run start
