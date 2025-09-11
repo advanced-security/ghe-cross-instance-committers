@@ -75,3 +75,15 @@ The above script should output something like:
 ```
 You have a total of XX unique developers across your GitHub instances.
 ```
+
+If you want to deduplicate by email (to catch users with multiple usernames), run:
+
+```bash
+npm run email
+```
+
+The email deduplication script should output something like:
+
+```
+You have a total of XX unique developers (by email) across your GitHub instances.
+```
