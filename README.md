@@ -64,7 +64,7 @@ If you are on a GHEC instance (including EMU), please head to `https://github.co
     DIRECTORY_OF_CSV_CONTENT=XXX
     ```
 
-3.  Run the script
+3.  Run the script to deduplicate by username
 
     ```bash
     npm run start
@@ -74,4 +74,16 @@ The above script should output something like:
 
 ```
 You have a total of XX unique developers across your GitHub instances.
+```
+
+If you want to deduplicate by email (to catch users with multiple usernames), run:
+
+```bash
+npm run email
+```
+
+The email deduplication script should output something like:
+
+```
+You have a total of XX unique developers (by email) across your GitHub instances.
 ```

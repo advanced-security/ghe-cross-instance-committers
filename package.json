@@ -25,6 +25,7 @@
   },
   "scripts": {
     "start": "npm run build && node lib/src/main.js",
+    "email": "npm run build && node lib/src/main-email-dedup.js",
     "clean": "rimraf coverage lib tmp",
     "prebuild": "npm run lint",
     "build": "tsc -p tsconfig.json",
