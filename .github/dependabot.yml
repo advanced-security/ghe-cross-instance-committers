@@ -4,6 +4,8 @@ updates:
     directory: /
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 3
     reviewers:
       - 'nickliffen'
     groups:
@@ -14,6 +16,8 @@ updates:
     directory: /
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 3
     reviewers:
       - 'nickliffen'
     groups:
