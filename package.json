@@ -6,23 +6,23 @@
     "node": "20"
   },
   "devDependencies": {
-    "@tsconfig/node20": "^20.1.8",
+    "@tsconfig/node20": "^20.1.9",
     "@types/jest": "~30.0",
     "@types/mock-fs": "^4.13.4",
-    "@types/node": "~24",
-    "@types/papaparse": "^5.5.0",
-    "@typescript-eslint/eslint-plugin": "~8.48",
-    "@typescript-eslint/parser": "~8.48",
-    "eslint": "~9.39",
+    "@types/node": "~26",
+    "@types/papaparse": "^5.5.2",
+    "@typescript-eslint/eslint-plugin": "~8.62",
+    "@typescript-eslint/parser": "~8.62",
+    "eslint": "~10.6",
     "eslint-config-prettier": "~10.1",
-    "eslint-plugin-jest": "~29.2",
-    "jest": "~30.2",
-    "jest-util": "~30.2",
-    "prettier": "~3.7",
+    "eslint-plugin-jest": "~29.15",
+    "jest": "~30.4",
+    "jest-util": "~30.4",
+    "prettier": "~3.9",
     "rimraf": "~6.1",
     "ts-jest": "~29.4",
     "tsutils": "~3.21",
-    "typescript": "~5.9"
+    "typescript": "~6.0"
   },
   "scripts": {
     "start": "npm run build && node lib/src/main.js",
@@ -39,13 +39,13 @@
   "author": "Nick Liffen <nickliffen@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^17.2.3",
-    "fast-csv": "^5.0.5",
+    "dotenv": "^17.4.2",
+    "fast-csv": "^5.0.7",
     "install": "^0.13.0",
-    "js-yaml": "^4.1.1",
+    "js-yaml": "^5.2.0",
     "mock-fs": "^5.5.0",
-    "npm": "^11.6.4",
-    "papaparse": "^5.5.3",
+    "npm": "^11.17.0",
+    "papaparse": "^5.5.4",
     "tslib": "~2.8"
   }
 }
