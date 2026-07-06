@@ -29,3 +29,7 @@ lib/
 
 # Misc
 .DS_Store
+
+# Local datasets
+csvs
+old_csvs
